@@ -1,0 +1,246 @@
+/* Connecting Fonts */
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-MediumItalic.eot');
+    src: local('../fonts/Google Sans Medium Italic'), local('GoogleSans-MediumItalic'),
+        url('../fonts/GoogleSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GoogleSans-MediumItalic.woff2') format('woff2'),
+        url('../fonts/GoogleSans-MediumItalic.woff') format('woff'),
+        url('../fonts/GoogleSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Bold.eot');
+    src: local('../fonts/Google Sans Bold'), local('GoogleSans-Bold'),
+        url('../fonts/GoogleSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GoogleSans-Bold.woff2') format('woff2'),
+        url('../fonts/GoogleSans-Bold.woff') format('woff'),
+        url('../fonts/GoogleSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Italic.eot');
+    src: local('../fonts/Google Sans Italic'), local('GoogleSans-Italic'),
+        url('../fonts/GoogleSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GoogleSans-Italic.woff2') format('woff2'),
+        url('../fonts/GoogleSans-Italic.woff') format('woff'),
+        url('../fonts/GoogleSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Medium.eot');
+    src: local('../fonts/Google Sans Medium'), local('GoogleSans-Medium'),
+        url('../fonts/GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GoogleSans-Medium.woff2') format('woff2'),
+        url('../fonts/GoogleSans-Medium.woff') format('woff'),
+        url('../fonts/GoogleSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-Regular.eot');
+    src: local('../fonts/Google Sans Regular'), local('GoogleSans-Regular'),
+        url('../fonts/GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GoogleSans-Regular.woff2') format('woff2'),
+        url('../fonts/GoogleSans-Regular.woff') format('woff'),
+        url('../fonts/GoogleSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/GoogleSans-BoldItalic.eot');
+    src: local('../fonts/Google Sans Bold Italic'), local('GoogleSans-BoldItalic'),
+        url('../fonts/GoogleSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GoogleSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/GoogleSans-BoldItalic.woff') format('woff'),
+        url('../fonts/GoogleSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+} 
+
+/* Used fonts: 
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Volkhov', serif;
+font-family: 'Google Sans', serif;
+
+100 Thin (Hairline)
+200 Extra Light (Ultra Light)
+300 Light
+400 Normal
+500 Medium
+600 Semi Bold (Demi Bold)
+700 Bold
+800 Extra Bold (Ultra Bold)
+900 Black (Heavy)
+*/
+
+
+/* Global settings */
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #5E6282;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../svg/decore.svg);
+    background-repeat: no-repeat;
+    background-position: top right 14%;
+}
+
+h1 {
+    font-family: 'Volkhov', serif;
+    color: #181E4B;
+    font-size: 84px;
+    line-height: 89px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Volkhov', serif;
+    color: #14183E;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family:'Poppins', sans-serif;
+    color: #5E6282;
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+/* Hero - Nav */
+
+nav {
+    display: flex;
+    color: #212832;
+    margin: 0 10%;
+    padding-top: 50px;
+    position: relative;
+}
+
+/* nav::after {
+    position: absolute;
+    content: url(../svg/decore.svg);
+    left: 592px;
+    top: 0;
+    z-index: 0;
+} */
+
+nav img {
+    min-width: 115px;
+    height: 34px;
+}
+
+nav a {
+    color: #212832;
+    font-family: 'Google Sans', serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav_navigation {
+    width: 100%;
+    padding-left: 20%;
+    padding-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Hero - Content */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    min-height: 764px;
+    position: relative;
+}
+
+.hero_content {
+    max-width: 545px;
+    width: 100%;
+    padding-top: 130px;
+}
+
+.hero_content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 450px;
+    border-radius: 10px;
+    background-color: #F1A501;
+    font-family: 'Google Sans', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header strong {
+    display: block;
+    color: #DF6951;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 22px;
+}
+
+header h1 {
+    letter-spacing: -0.04em;
+    margin-bottom: 32px;
+}
+
+header p {
+    max-width: 477px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.hero_logo {
+    position: absolute;
+    min-width: 784px;
+    height: 764px;
+    top: 20px;
+    right: 87px;
+    z-index: 0;
+}
+
+.hero_logo::before {
+    position: absolute;
+    content: url(../svg/airplain.svg);
+    top: 57px;
+    right: 490px;
+}
+
+.hero_logo::after {
+    position: absolute;
+    content:url(../svg/airplain.svg);
+    top: 103px;
+    right: 5px;
+    z-index: -1;
+}
