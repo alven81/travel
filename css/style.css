@@ -177,6 +177,7 @@ header {
     padding: 0 10%;
     min-height: 764px;
     position: relative;
+    margin-bottom: 130px;
 }
 
 .hero_content {
@@ -193,6 +194,7 @@ header {
     width: 450px;
     border-radius: 10px;
     background-color: #F1A501;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
     font-family: 'Google Sans', serif;
     font-size: 18px;
     font-weight: 500;
@@ -227,7 +229,11 @@ header p {
     height: 764px;
     top: 20px;
     right: 87px;
-    z-index: 0;
+}
+
+.hero_logo img {
+    position: absolute;
+    z-index: 1;
 }
 
 .hero_logo::before {
@@ -242,5 +248,248 @@ header p {
     content:url(../svg/airplain.svg);
     top: 103px;
     right: 5px;
+    z-index: 0;
+}
+
+/* Services */
+
+.services {
+    min-height: 439px;
+    padding: 0 10%;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.services_offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.services_offer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.services_offer figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 167px;
+    height: 154px;
+    text-align: center;
+}
+
+.services_offer b {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E1D4C;
+    margin-bottom: 15px;
+}
+
+.services_offer p {
+    width: 181px;
+    height: 78px;
+}
+
+/* Destinations */
+
+.destination {
+    min-height: 617px;
+    padding: 0 10%;
+    text-align: center;
+    margin-bottom: 186px;
+}
+
+.destination_select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.destination_select img {
+    border-radius: 24px 24px 0 0;
+    object-fit: cover;
+    object-position: 0 0;
+    height: 327px;
+    width: 314px;
+    padding: 0;
+}
+
+ .destination_select .shaddow {
+    border-radius: 24px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+} 
+
+.destination_select_choose {
+    height: 130px;
+    width: 314px;
+    padding: 27px 20px 42px; 
+    text-align: left;
+}
+
+.destination_select b, span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.destination_select_where {
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination_select_choose p {
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.destination_select_choose p:before {
+    content: url(../svg/vector.svg);
+    padding: 0 10px;
+}
+
+/* Book a trip */
+
+.book_a_treep {
+    display: flex;
+    justify-content: space-between;
+    min-height: 492px;
+    padding: 0 10%;
+    margin-bottom: 220px;
+}
+
+.book_a_treep_choose {
+    width: 100%;
+    max-width: 511px;
+}
+
+.book_a_treep_choose div {
+    padding: 10px 0 40px 65px;
+    width: 455px;
+    position: relative;
+}
+
+.book_a_treep_choose_frst::before {
+    position: absolute;
+    content: url(../svg/but_square.svg);
+    left: 0px;
+    top: 20px;
+}
+
+.book_a_treep_choose_scnd::before {
+    position: absolute;
+    content: url(../svg/but_swim.svg);
+    left: 0px;
+    top: 20px;
+}
+
+.book_a_treep_choose_thrd::before {
+    position: absolute;
+    content: url(../svg/but_car.svg);
+    left: 0px;
+    top: 20px;
+}
+
+.book_a_treep_go {
+    position: relative;
+    background:  white;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 26px;
+    width: 370px;
+    height: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 60px;
+}
+
+.book_a_treep_go * {
+    z-index: 10;
+}
+
+.book_a_treep_go::after {
+    position: absolute;
+    content: url(../svg/ellipse.png);
+    filter: blur(100px);
+    opacity: 0.5;
+    border-radius: 50px;
+    top: -59px;
+    right: -44px;
     z-index: -1;
+}
+
+.book_a_treep_go img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.book_a_treep_go b {
+    display: block;
+    font-size: 18px;
+    color: #080809;
+    margin-bottom: 15px;
+}
+
+.book_a_treep_date {
+    display: flex;
+}
+
+.book_a_treep_date {
+    columns: #84829A;
+    font-weight: 500;
+}
+
+.book_a_treep_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 138px;
+}
+
+.book_a_treep_nav a{
+    position: relative;
+    min-width: 36px;
+    height: 36px;
+    background-color:  #F5F5F5;
+    border-radius: 50%;
+}
+
+.book_a_treep_nav a img{
+    position: absolute;
+    bottom: -9px;
+    left: 11px;
+}
+
+.book_a_treep_people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_a_treep_people p::before {
+    content: url(../svg/building.svg);
+    padding-right: 10px;
+}
+
+/* Testimonial section */
+
+.testimonial {
+    text-align: center;
+    padding: 0 10%;
+    min-height: 482px;
+}
+
+
+/* Logos */
+
+.logos img {
+    display: block;
+}
+
+.logos {
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between ;
+    align-items: center;
 }
